@@ -3,7 +3,7 @@
 ![Luffy](https://cdn.oneesports.gg/cdn-data/2023/07/Anime_JujutsuKaisen_Season2_GojoSatoru_GetoSuguru_GegeAkutami.jpg)
 
 ## Overview
-The Anime Data Project aims to collect, store, analyze, and visualize data related to anime. It involves web scraping anime information from MyAnimeList, storing the data in a MySQL database, analyzing it, and creating visualizations to gain insights.
+The Anime Database Project aims to collect, store, analyze, and visualize data related to anime. It involves web scraping anime information from MyAnimeList, storing the data in a MySQL database, analyzing it, and creating visualizations to gain insights.
 
 ## Components
 
