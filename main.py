@@ -99,6 +99,7 @@ def scrape_anime_page(url):
     synopsis_element = soup.find("p", itemprop="description")
     synopsis = synopsis_element.text.strip() if synopsis_element else None
 
+
     anime_info = {
         "genres": ", ".join(genres),
         "synopsis": synopsis,
