@@ -4,9 +4,6 @@ from bs4 import BeautifulSoup
 import os
 import mysql.connector
 
-## WORK IN PROGRESS
-## DOES NOT WORK
-
 class MySQLConnector:
     def __init__(self, config_file):
         with open(config_file, 'r') as f:
@@ -45,9 +42,7 @@ def scrape_anime_images(cursor):
             soup = BeautifulSoup(response.text, "html.parser")
 
             # Find the cover photo image element
-            image_element = soup.find("img", class_="image")
-
-            print(f"Found image element for anime: {title} - {image_element}")
+            image_element = soup.find("img", itemprop="image")
 
             if image_element:
                 # Get the image URL
